@@ -1,0 +1,1 @@
+﻿ get-mailboxstatistics -server MSI-MB021.internal.msichicago.org | Sort-Object totalitemsize  -first 50 -Descending | select displayname, totalitemsize | out-file C:\Batch\50BiggestBoxes.csv 
